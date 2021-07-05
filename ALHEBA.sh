@@ -3,7 +3,7 @@ THIS_DIR=$(cd $(dirname $0); pwd)
 Version=`lsb_release -rs | cut -f1 -d"."`
 install() {
 echo -e "\033[0;36m"
-echo -e "~ Welcome To Source DevProx - اهلا بك في سورس ديف بروكس ~"
+echo -e "~ Welcome To Source ALHEBA - اهلا بك في سورس الهيبة ~"
 echo -e "     ~ { Setting Up Offices - جاري رفع المكاتب } ~"
 echo -e "\033[0m"
 sudo apt-get update -y
@@ -18,7 +18,7 @@ sudo apt-get install libreadline-dev -y libconfig-dev -y libssl-dev -y lua5.2 -y
 if [ "$Version" == "18" ]; then
 echo -e "\033[0;31m\n~ Installing Depedencies For Ubuntu 18... \n\033[0m"
 cd /lib/x86_64-linux-gnu/ && sudo ln -s libreadline.so.7.0 libreadline.so.6
-wget "apiabs.ml/installubuntu18/compat-libevent2-5_2.0.21-1ubuntu18_amd64.deb" && sudo dpkg -i compat-libevent2-5_2.0.21-1ubuntu18_amd64.deb
+wget "apiMustafa.ml/installubuntu18/compat-libevent2-5_2.0.21-1ubuntu18_amd64.deb" && sudo dpkg -i compat-libevent2-5_2.0.21-1ubuntu18_amd64.deb
 rm compat-libevent2-5_2.0.21-1ubuntu18_amd64.deb
 fi
 sudo apt-get install screen -y
@@ -50,13 +50,13 @@ echo -e "|   | | | |/ _ \ \ / / |_) | '__/ _ \ \/ /  |"
 echo -e "|   | |_| |  __/\ V /|  __/| | | (_) >  <   |"
 echo -e "|   |____/ \___| \_/ |_|   |_|  \___/_/\_\  |"
 echo -e "|-------------------------------------------|"
-echo -e "|This Source Was Developed By (ABS) @IQ_ABS.|"
-echo -e "|  This Is The Source Channel @Dev_Prox .   |"
-echo -e "|               - DevProx -                 |"
+echo -e "|This Source Was Developed By (Mustafa) @M8zx8.|"
+echo -e "|  This Is The Source Channel @Alheba_0M .   |"
+echo -e "|               - ALHEBA -                 |"
 echo -e "---------------------------------------------"
 echo -e "\033[0m"
 cd $THIS_DIR && sudo chmod +x tg
-lua DevProx.lua
+lua ALHEBA.lua
 }
 if [ "$1" = "install" ]; then
 install
@@ -66,5 +66,5 @@ echo -e "\033[0;31m\n~ The tg File Was Not Found In The Bot Files\n\033[0;33m"
 exit 1
 fi
 cd $THIS_DIR && sudo chmod +x tg
-lua DevProx.lua
+lua ALHEBA.lua
 fi
