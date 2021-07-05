@@ -70,7 +70,7 @@ https.request("https://apiabs.ml/config.php?Get=DevProx&DevId="..DevMustafa:get(
 file = io.open("ALHEBA.sh", "w")  
 file:write([[
 #!/usr/bin/env bash
-cd $HOME/DevProx
+cd $HOME/ALHEBA
 token="]]..DevMustafa:get(Server.."TokenDevProx")..[["
 while(true) do
 rm -fr ../.telegram-cli
@@ -96,8 +96,8 @@ file:write([[
 cd $HOME/DevProx
 while(true) do
 rm -fr ../.telegram-cli
-screen -S DevProx -X kill
-screen -S DevProx ./ALHEBA.sh
+screen -S ALHEBA -X kill
+screen -S ALHEBA ./ALHEBA.sh
 done
 ]]) 
 file:close() 
