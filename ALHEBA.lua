@@ -93,7 +93,7 @@ file:close()
 file = io.open("Run", "w")  
 file:write([[
 #!/usr/bin/env bash
-cd $HOME/DevProx
+cd $HOME/ALHEBA
 while(true) do
 rm -fr ../.telegram-cli
 screen -S ALHEBA -X kill
